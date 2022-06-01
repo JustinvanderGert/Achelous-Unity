@@ -1119,6 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f6681cf485d47488e181b730a07bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedScore: 0
   baseSpeed: 12
   gravity: -9.81
   jumpHeight: 3
@@ -1128,6 +1129,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  speed: 12
 --- !u!143 &961134252
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1295,6 +1297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058096136}
   - component: {fileID: 1058096135}
+  - component: {fileID: 1058096137}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1330,6 +1333,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058096137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058096134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69336ec90181cb540907e0afad158981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1105855050
 PrefabInstance:
   m_ObjectHideFlags: 0
