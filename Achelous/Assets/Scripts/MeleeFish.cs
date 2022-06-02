@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CloseFish : MonoBehaviour
+public class MeleeFish : MonoBehaviour
 {
     // Speed of the object moving, what the enemy is targetting and what the enemy is looking at
     public float speed = 1.0f;
