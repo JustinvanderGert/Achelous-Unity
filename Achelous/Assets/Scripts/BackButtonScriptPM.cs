@@ -1,16 +1,18 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BackButtonScriptPM : MonoBehaviour
 {
+    public returnSystem;
 
     public GameObject PauseMenuHUD;
+    public GameObject InGameHUD;
+    public Camera AimCamera;
 
-    public static bool gameIsPaused;
-    void Start()
+    void Update()
     {
-
+        if (returnSystem)
         {
             gameIsPaused = !gameIsPaused;
             PauseGame();
@@ -19,9 +21,24 @@ public class BackButtonScriptPM : MonoBehaviour
     }
     void PauseGame()
     {
-        Time.timeScale = 1;
-        PauseMenuHUD.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
+        if (gameIsPaused)
+        {
+            Time.timeScale = 0f;
+            PauseMenuHUD.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            AimCamera.gameObject.SetActive(false);
+            InGameHUD.SetActive(false);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            PauseMenuHUD.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            AimCamera.gameObject.SetActive(true);
+            InGameHUD.SetActive(true);
+        }
     }
-    
 }
+   
