@@ -11,6 +11,19 @@ public class ChangeScene : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
