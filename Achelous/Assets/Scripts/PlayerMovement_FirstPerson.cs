@@ -82,14 +82,14 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
         {
             if (speed == baseSpeed)
             {
-                speed *= 3;
+                speed += 20;
             }
         }
         else
         {
             if (speed == baseSpeed)
             {
-                speed *= 2f;
+                speed += 10f;
             }
         }
 

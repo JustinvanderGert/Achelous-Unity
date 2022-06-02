@@ -11,7 +11,7 @@ public class Target2 : MonoBehaviour
     public Image InnerBorder;
 
     public enum ChargeStates { Inactive, Charging, Half, Full};
-    public ChargeStates chargeState = ChargeStates.Inactive;
+    public ChargeStates chargeState = ChargeStates.Full;
 
     public float currentCharge = 0;
     public float chargeTime = 10;
@@ -36,7 +36,7 @@ public class Target2 : MonoBehaviour
     void Update()
     {
         //Make it charge when it's active
-        if (chargeState != ChargeStates.Inactive)
+        /*if (chargeState != ChargeStates.Inactive)
             chargeManager();
 
         //Change innerborders color based on charge level
@@ -46,7 +46,7 @@ public class Target2 : MonoBehaviour
             InnerBorder.color = new Color(255, 255, 0);
         else
             InnerBorder.color = new Color(0, 0, 0);
-
+        */
     }
 
     //Handle the charging system
@@ -99,7 +99,7 @@ public class Target2 : MonoBehaviour
     //Reset slider variables
     public void ResetState()
     {
-        chargeState = ChargeStates.Charging;
+        chargeState = ChargeStates.Full;
         currentCharge = 0;
         slider.value = currentCharge / chargeTime * 100;
     }
