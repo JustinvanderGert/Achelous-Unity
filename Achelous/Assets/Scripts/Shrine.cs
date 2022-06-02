@@ -9,6 +9,7 @@ public class Shrine : MonoBehaviour
     public float activationRange = 5f;
     public Text activationText;
 
+    bool activated = false;
     GameObject player;
 
 
@@ -20,7 +21,7 @@ public class Shrine : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        if(distance < activationRange)
+        if(distance < activationRange && !activated)
             activationText.gameObject.SetActive(true);
 
         else
@@ -37,7 +38,8 @@ public class Shrine : MonoBehaviour
     void ActivateShrine()
     {
         Debug.Log("Activated shrine");
-
+        activationText.gameObject.SetActive(false);
+        activated = true;
     }
 
     private void OnDrawGizmosSelected()
