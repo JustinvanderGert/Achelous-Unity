@@ -16,12 +16,12 @@ public class FovChange : MonoBehaviour
     public float zoomBoundOne = 10.0f;
     public float zoomBoundTwo = 30.0f;
 
-    public float fovBoundOne = 40f;
-    public float fovBoundTwo = 60f;
+    public float fovBoundOne = 60f;
+    public float fovBoundTwo = 70f;
     public float fovBoundThree = 80f;
     void Start()
     {
-        currentFov = 40f;
+        currentFov = 50f;
         desiredFov = currentFov;
         player = (GameObject.Find("Player").GetComponent<PlayerMovement_FirstPerson>());
     }
