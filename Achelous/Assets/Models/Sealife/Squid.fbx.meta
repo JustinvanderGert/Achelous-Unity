@@ -38,8 +38,8 @@ ModelImporter:
       name: Armature|ArmatureAction
       takeName: Armature|ArmatureAction
       internalID: 0
-      firstFrame: 0
-      lastFrame: 308
+      firstFrame: 40
+      lastFrame: 174
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
