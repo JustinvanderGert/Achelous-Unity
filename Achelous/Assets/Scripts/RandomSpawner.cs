@@ -10,9 +10,9 @@ public class RandomSpawner : MonoBehaviour
 
     void Start()
     {
-        for(noOfBoxes = 0; noOfBoxes < 20; noOfBoxes++)
+        for(int i = 0; i < noOfBoxes; i++)
         {
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(-10, 11), Random.Range(1, 11), Random.Range(-10, 11));
+            Vector3 randomSpawnPosition = new Vector3(Random.Range(-20, 21), Random.Range(1, 11), Random.Range(-20, 21));
             Instantiate(CubePrefab, randomSpawnPosition, Quaternion.identity);
 
         }

@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CubePrefab: {fileID: 2093235329}
-  noOfBoxes: 10
+  noOfBoxes: 5
 --- !u!4 &56790788
 Transform:
   m_ObjectHideFlags: 0
