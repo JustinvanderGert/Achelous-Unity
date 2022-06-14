@@ -7,28 +7,60 @@ public class UI_Info : MonoBehaviour
 {
     GameObject player;
 
-    public float activeDistance;
+    [SerializeField]
+    GameObject interactPrompt;
+
+    bool scanning = false;
+
+
+    public float activeDistance = 10;
+    public GameObject uiElement;
+
+
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        interactPrompt = GameObject.FindGameObjectWithTag("interactPrompt");
+        uiElement.SetActive(false);
     }
 
 
     void Update()
     {
-        if(gameObject.activeSelf)
-            transform.LookAt(player.transform);
+        if(uiElement.activeSelf)
+            uiElement.transform.LookAt(player.transform);
 
-
-        float distance = Vector3.Distance(transform.position, player.transform.position);
-        if(distance <= activeDistance)
+        if (!scanning)
         {
-            gameObject.SetActive(true);
+            float distance = Vector3.Distance(uiElement.transform.position, player.transform.position);
+
+            if (distance <= activeDistance)
+                interactPrompt.SetActive(true);
+            else
+                interactPrompt.SetActive(false);
         }
         else
         {
-            gameObject.SetActive(false);
+            float distance = Vector3.Distance(uiElement.transform.position, player.transform.position);
+            if (distance > activeDistance + 5)
+            {
+                uiElement.SetActive(false);
+                scanning = false;
+            }
         }
+
+        if(interactPrompt.activeSelf && Input.GetKeyDown(KeyCode.E))
+        {
+            scanning = true;
+            interactPrompt.SetActive(false);
+            uiElement.SetActive(true);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, activeDistance);
     }
 }
