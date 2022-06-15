@@ -33,10 +33,15 @@ public class Shootables : MonoBehaviour
     {
         playerScript.visibleTargets.Remove(gameObject);
         target.Hit();
+        Debug.Log("I got SHOT!!!");
 
-        if (transform.parent != null && transform.parent.CompareTag("HermitCrab"))
+        if (transform.parent != null && transform.parent.CompareTag("HermitCrabPart"))
         {
-            transform.parent.gameObject.GetComponent<HermitCrab>().Hit();
+            HermitCrab crab = transform.parent.gameObject.GetComponentInParent<HermitCrab>();
+            crab.activeShootables.Remove(gameObject);
+            crab.Hit();
+
+            Debug.Log("Handle boss functions");
         }
 
         Destroy(gameObject);
