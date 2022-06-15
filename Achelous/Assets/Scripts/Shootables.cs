@@ -12,6 +12,10 @@ public class Shootables : MonoBehaviour
     bool seenHandled = false;
 
 
+    public GameObject spawner;
+
+
+
     void Start()
     {
         playerScript = FindObjectOfType<Player>();
@@ -33,15 +37,16 @@ public class Shootables : MonoBehaviour
     {
         playerScript.visibleTargets.Remove(gameObject);
         target.Hit();
-        Debug.Log("I got SHOT!!!");
 
         if (transform.parent != null && transform.parent.CompareTag("HermitCrabPart"))
         {
             HermitCrab crab = transform.parent.gameObject.GetComponentInParent<HermitCrab>();
             crab.activeShootables.Remove(gameObject);
             crab.Hit();
-
-            Debug.Log("Handle boss functions");
+        } else
+        {
+            spawner.GetComponent<RandomSpawner>().allPlastic.Remove(gameObject);
+            spawner.GetComponent<RandomSpawner>().PlasticHit();
         }
 
         Destroy(gameObject);
