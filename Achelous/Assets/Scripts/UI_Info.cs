@@ -29,7 +29,7 @@ public class UI_Info : MonoBehaviour
     void Update()
     {
         if(uiElement.activeSelf)
-            uiElement.transform.LookAt(player.transform);
+            uiElement.transform.LookAt(2 * transform.position - player.transform.position);
 
         if (!scanning)
         {
