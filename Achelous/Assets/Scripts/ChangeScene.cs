@@ -13,7 +13,7 @@ public class ChangeScene : MonoBehaviour
 
     private void Awake()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 0)
+        if(SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 3)
         {
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
