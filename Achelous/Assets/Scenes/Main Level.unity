@@ -673,6 +673,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -107.142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f280b82d89c1e64c9c982fa00a1bad2, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house (2)
@@ -817,6 +825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -11.130005
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House (3)
@@ -902,6 +914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -28.731
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house
@@ -959,6 +975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -43.705994
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House
@@ -1233,6 +1253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -129.12
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House (1)
@@ -1364,6 +1388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 9.1380005
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House (3)
@@ -1662,6 +1690,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 318.476
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house (1)
@@ -2172,6 +2204,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -258.827
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House (2)
@@ -2247,6 +2287,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -151.685
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House (2)
@@ -2446,6 +2490,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 214.009
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house (3)
@@ -2516,6 +2564,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 117.838
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house (1)
@@ -3927,6 +3979,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 206.03
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f280b82d89c1e64c9c982fa00a1bad2, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house (3)
@@ -4208,6 +4268,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 58.643
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house (2)
@@ -4528,6 +4592,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -129.12
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House (1)
@@ -6575,6 +6643,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -43.705994
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
       propertyPath: m_Name
       value: Luxury House
@@ -7206,6 +7278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 38.327
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8549aa193f720344bff948df94a0184, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3fe6ef3487151df4b9bdf6ce0fc13738, type: 2}
     - target: {fileID: 919132149155446097, guid: b8549aa193f720344bff948df94a0184, type: 3}
       propertyPath: m_Name
       value: terraced house
