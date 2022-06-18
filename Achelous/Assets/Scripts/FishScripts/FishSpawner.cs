@@ -24,14 +24,11 @@ public class FishSpawner : MonoBehaviour
         for (int i = 0; i < fish.Count; i++)
         {
             float currentWeight = fish[i].GetComponent<FishSpawnSettings>().spawnWeight;
-
-            float timesToSpawn = totalWeight / fish.Count / spawnAmount * currentWeight * 100;
-            Debug.Log("Times: " + timesToSpawn);
+            float timesToSpawn = 100 / (100 / spawnAmount * totalWeight) * currentWeight;
 
             for (int b = 0; b < timesToSpawn; b++)
             {
                 Vector3 spawnPosition = transform.position + new Vector3(Random.Range(0, spawnSize.x), Random.Range(0, spawnSize.y), Random.Range(0, spawnSize.z)) - spawnSize / 2;
-                Debug.Log(spawnPosition);
                 Instantiate(fish[i], spawnPosition, transform.rotation, gameObject.transform);
             }
         }
