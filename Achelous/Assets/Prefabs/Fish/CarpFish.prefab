@@ -294,8 +294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotateSpeed: 1
+  rotateSpeed: 0.5
   swimDistance: 25
+  newPointDist: 5
 --- !u!54 &7901367139896403861
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -389,8 +389,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  rotateSpeed: 1
+  rotateSpeed: 0.5
   swimDistance: 100
+  newPointDist: 5
 --- !u!1 &4000841134060294976
 GameObject:
   m_ObjectHideFlags: 0
