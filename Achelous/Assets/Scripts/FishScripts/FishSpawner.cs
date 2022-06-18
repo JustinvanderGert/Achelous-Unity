@@ -29,7 +29,13 @@ public class FishSpawner : MonoBehaviour
             for (int b = 0; b < timesToSpawn; b++)
             {
                 Vector3 spawnPosition = transform.position + new Vector3(Random.Range(0, spawnSize.x), Random.Range(0, spawnSize.y), Random.Range(0, spawnSize.z)) - spawnSize / 2;
-                Instantiate(fish[i], spawnPosition, transform.rotation, gameObject.transform);
+                GameObject fishObject = Instantiate(fish[i], spawnPosition, transform.rotation, gameObject.transform);
+                if(Physics.OverlapSphere(fishObject.transform.position, 1).Length > 0)
+                {
+                    Destroy(fishObject);
+                    b--;
+                }
+
             }
         }
     }
