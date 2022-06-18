@@ -155,6 +155,8 @@ MonoBehaviour:
   noOfBoxes: 5
   CubePrefab: {fileID: 1513637305600388804, guid: 146bf461021bbfb469fca114e4ff6296, type: 3}
   allPlastic: []
+  plastics:
+  - {fileID: 1513637305600388804, guid: 146bf461021bbfb469fca114e4ff6296, type: 3}
 --- !u!4 &56790788
 Transform:
   m_ObjectHideFlags: 0
@@ -7959,6 +7961,7 @@ MonoBehaviour:
   activeShootables: []
   shootable: {fileID: 6122355611262371972, guid: 184b1715158a7364582b4236dfee79c3, type: 3}
   projectile: {fileID: 8412644024158949413, guid: b7df33f494aaeae4d8a66ebd35f0717f, type: 3}
+  activationDistance: 100
   idleTime: 7.5
   armAttackDelay: 5
   slamAttackDelay: 10

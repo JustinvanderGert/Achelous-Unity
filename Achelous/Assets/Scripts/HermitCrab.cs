@@ -30,6 +30,7 @@ public class HermitCrab : MonoBehaviour
     public GameObject shootable;
     public GameObject projectile;
 
+    public float activationDistance = 100;
     public float idleTime = 3;
     public float armAttackDelay = 5;
     public float slamAttackDelay = 10;
@@ -51,9 +52,20 @@ public class HermitCrab : MonoBehaviour
         {
             SetPhase();
         }
+
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+        if(distance <= activationDistance && attackPhase == AttackPhase.Idle)
+        {
+            SetPhase();
+        }
     }
 
-    
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, activationDistance);
+    }
+
+
     //Spawn the shootable areas depending on the current phase.
     public void SpawnShootables()
     {
