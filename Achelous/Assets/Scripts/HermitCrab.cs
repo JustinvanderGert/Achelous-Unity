@@ -148,7 +148,6 @@ public class HermitCrab : MonoBehaviour
         //Swing arms
         else if(attackPhase == AttackPhase.Phase2)
         {
-            PlaySound(bossClaw);
 
             if (leftArmAttack)
             {
@@ -202,6 +201,7 @@ public class HermitCrab : MonoBehaviour
         }
 
         yield return new WaitForSeconds(startTime);
+        PlaySound(bossClaw);
 
         if (leftArmAttack)
             armHitTriggers[0].enabled = true;
