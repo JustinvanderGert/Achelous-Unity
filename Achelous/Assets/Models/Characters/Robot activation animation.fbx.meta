@@ -1,35 +1,23 @@
 fileFormatVersion: 2
-guid: aeaa7047a2ad120419362c8f05e97e6f
+guid: aee4884f84ca5974fa0df38e1b8ac79c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 5315842518111639222
-    second: metarig|CameraAction
+      74: -8432781629581899286
+    second: metarig|activation
   - first:
-      74: -4946623131054519084
-    second: metarig|EmptyAction
+      74: -1798873479753827640
+    second: metarig|activation.001
   - first:
-      74: 2611075726810385300
-    second: metarig|idle
+      74: 3256614864189731746
+    second: metarig|activation.002
   - first:
-      74: 3525723067814839291
-    second: metarig|LightAction
+      74: 5821747910773980249
+    second: metarig|activation.003
   - first:
-      74: -6790388888330126015
-    second: metarig|idle.001
-  - first:
-      74: 7783820046236696427
-    second: metarig|idle.002
-  - first:
-      74: 7538611821863704781
-    second: metarig|RobotAction
-  - first:
-      74: -736616891721166463
-    second: metarig|running animation
-  - first:
-      74: 4286642526040773415
-    second: metarig|running animation.001
+      74: -6340013454330811184
+    second: metarig|goofy ahh
   externalObjects: {}
   materials:
     materialImportMode: 2
