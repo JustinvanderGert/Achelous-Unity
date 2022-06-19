@@ -30,14 +30,14 @@ public class FovChange : MonoBehaviour
     {
         if (player_speed < zoomBoundOne) //swapped last_speed with zoomBound
         {
-            print("Player Speed Decreasing - Zoom IN!");
+            //print("Player Speed Decreasing - Zoom IN!");
             last_speed = player_speed;
             desiredFov = fovBoundOne;
             //currentFOV to minFOV
         }
         else if (player_speed > zoomBoundOne && player_speed < zoomBoundTwo) //swapped last_speed with zoomBound
         {
-            print("Player Speed Increasing - Zoom OUT!");
+            //print("Player Speed Increasing - Zoom OUT!");
             last_speed = player_speed;
             desiredFov = fovBoundTwo;
             //current FOV to maxFOV

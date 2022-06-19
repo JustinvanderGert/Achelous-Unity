@@ -11,10 +11,12 @@ public class Shrine : MonoBehaviour
 
     bool activated = false;
     GameObject player;
+    AudioSource audioSource;
 
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -30,7 +32,7 @@ public class Shrine : MonoBehaviour
 
         if (activationText.gameObject.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.E))
                 ActivateShrine();
         }
     }
@@ -38,6 +40,7 @@ public class Shrine : MonoBehaviour
     void ActivateShrine()
     {
         Debug.Log("Activated shrine");
+        audioSource.Play();
         activationText.gameObject.SetActive(false);
         activated = true;
     }

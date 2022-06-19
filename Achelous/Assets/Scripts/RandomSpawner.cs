@@ -5,9 +5,8 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     [SerializeField]
-    int noOfTrash = 5;
+    int noOfTrash = 1;
     int layerMask = 1 << 3;
-    int index;
 
     public Vector3 spawnSize;
 
@@ -18,6 +17,7 @@ public class RandomSpawner : MonoBehaviour
 
     void Start()
     {
+        //Fail safe in case someone forgets to set size
         if (spawnSize == new Vector3(0, 0, 0))
             spawnSize = new Vector3(10, 10, 10);
 
@@ -39,16 +39,19 @@ public class RandomSpawner : MonoBehaviour
             {
                 plastic.GetComponent<Shootables>().spawner = gameObject;
                 allPlastic.Add(plastic);
+                retries = 0;
             }
             else
             {
                 Destroy(plastic);
-                i--;
                 retries++;
-            }
-            if(retries >= 10)
-            {
-                i++;
+                i--;
+
+                if (retries >= 10)
+                {
+                    Debug.Log("Max attempts reached");
+                    i++;
+                }
             }
         }
     }

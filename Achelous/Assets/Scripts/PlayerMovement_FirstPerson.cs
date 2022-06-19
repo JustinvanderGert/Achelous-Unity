@@ -17,12 +17,14 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
     {
         speedScore = Vector3.Distance(oldPosition, transform.position) * 100f;
         oldPosition = transform.position;
-        Debug.Log("Speed: " + speedScore.ToString("F0"));
+        //Debug.Log("Speed: " + speedScore.ToString("F0"));
         
         
     }
 
     CharacterController characterController;
+    Animator animator;
+    AudioSource audioSource;
 
     public float baseSpeed = 12f;
     public float gravity = -9.81f;
@@ -44,6 +46,8 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -57,6 +61,20 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
+        if (animator && audioSource)
+        {
+            if (x > 0 || z > 0)
+            {
+                audioSource.Play();
+                animator.SetBool("Walking", true);
+            }
+            else
+            {
+                audioSource.Stop();
+                animator.SetBool("Walking", false);
+            }
+        }
 
         Vector3 move = transform.forward * -x + transform.right * z;
 
