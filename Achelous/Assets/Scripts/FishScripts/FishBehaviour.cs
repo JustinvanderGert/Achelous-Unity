@@ -13,11 +13,6 @@ public class FishBehaviour : MonoBehaviour
     bool foundNewPos = false;
     bool gettingNewPos = false;
 
-    void Start()
-    {
-
-    }
-
 
     void Update()
     {
@@ -28,8 +23,7 @@ public class FishBehaviour : MonoBehaviour
 
             Vector3 newDirection = Vector3.RotateTowards(transform.forward, (targetPosition - transform.position), rotateSpeed * Time.deltaTime, 0);
             transform.rotation = Quaternion.LookRotation(newDirection);
-            
-            Debug.Log("Moving!!");
+
         } else if (!foundNewPos && !gettingNewPos)
             GetTargetPosition();
 
@@ -45,20 +39,14 @@ public class FishBehaviour : MonoBehaviour
         gettingNewPos = true;
         targetPosition = Random.insideUnitSphere * Random.Range(5, 5 + swimDistance) + transform.position;
 
-        RaycastHit hit;
-        //Debug.Log(Vector3.Normalize(targetPosition - transform.position));
-        if (Physics.Raycast(transform.position, Vector3.Normalize(targetPosition - transform.position), out hit, swimDistance + 5))
+        if (Physics.Raycast(transform.position, Vector3.Normalize(targetPosition - transform.position), swimDistance + 5))
         {
             Debug.DrawLine(transform.position, targetPosition, Color.red, 2, false);
-            Debug.Log("Hit something" + hit);
-
-            //targetPosition = hit.transform.position;
             gettingNewPos = false;
         }
         else
         {
             Debug.DrawLine(transform.position, targetPosition, Color.green, 2, false);
-            Debug.Log("Allowed to move");
             gettingNewPos = false;
             foundNewPos = true;
         }

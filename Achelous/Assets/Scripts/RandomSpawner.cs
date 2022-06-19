@@ -5,8 +5,9 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     [SerializeField]
-    int noOfBoxes = 5;
-
+    int noOfTrash = 5;
+    int layerMask = 1 << 3;
+    int index;
 
     public Vector3 spawnSize;
 
@@ -17,21 +18,30 @@ public class RandomSpawner : MonoBehaviour
 
     void Start()
     {
-        for(int i = 0; i < noOfBoxes; i++)
-        {
-            SpawnPlastic();
-        }
+        SpawnPlastic(noOfTrash);
     }
-    
-    void SpawnPlastic()
-    {
-        int plasticToSpawn = Random.Range(0, plastics.Count - 1);
-        //Vector3 randomSpawnPosition = new Vector3(Random.Range(-20, 21), Random.Range(1, 11), Random.Range(-20, 21));
-        Vector3 randomSpawnPosition = transform.position + new Vector3(Random.Range(0, spawnSize.x), Random.Range(0, spawnSize.y), Random.Range(0, spawnSize.z)) - spawnSize / 2;
-        GameObject plastic = Instantiate(plastics[plasticToSpawn], randomSpawnPosition, Quaternion.identity);
 
-        plastic.GetComponent<Shootables>().spawner = gameObject;
-        allPlastic.Add(plastic);
+    void SpawnPlastic(int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            int plasticToSpawn = Random.Range(0, plastics.Count - 1);
+
+            Vector3 randomSpawnPosition = transform.position + new Vector3(Random.Range(0, spawnSize.x), Random.Range(0, spawnSize.y), Random.Range(0, spawnSize.z)) - spawnSize / 2;
+
+            GameObject plastic = Instantiate(plastics[plasticToSpawn], randomSpawnPosition, Quaternion.identity);
+
+            if (Physics.Raycast(plastic.transform.position, -Vector3.up, spawnSize.y, layerMask) && Physics.OverlapSphere(plastic.transform.position, 0.1f).Length <= 1)
+            {
+                plastic.GetComponent<Shootables>().spawner = gameObject;
+                allPlastic.Add(plastic);
+            }
+            else
+            {
+                Destroy(plastic);
+                i--;
+            }
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -42,11 +52,7 @@ public class RandomSpawner : MonoBehaviour
 
     public void PlasticHit()
     {
-        int amountToSpawn = noOfBoxes - allPlastic.Count;
-
-        for (int i = 0; i < amountToSpawn; i++)
-        {
-            SpawnPlastic();
-        }
+        int amountToSpawn = noOfTrash - allPlastic.Count;
+        SpawnPlastic(amountToSpawn);
     }
 }
