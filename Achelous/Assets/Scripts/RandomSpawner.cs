@@ -18,11 +18,15 @@ public class RandomSpawner : MonoBehaviour
 
     void Start()
     {
+        if (spawnSize == new Vector3(0, 0, 0))
+            spawnSize = new Vector3(10, 10, 10);
+
         SpawnPlastic(noOfTrash);
     }
 
     void SpawnPlastic(int amount)
     {
+        int retries = 0;
         for (int i = 0; i < amount; i++)
         {
             int plasticToSpawn = Random.Range(0, plastics.Count - 1);
@@ -40,6 +44,11 @@ public class RandomSpawner : MonoBehaviour
             {
                 Destroy(plastic);
                 i--;
+                retries++;
+            }
+            if(retries >= 10)
+            {
+                i++;
             }
         }
     }
