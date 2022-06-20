@@ -182,6 +182,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 766b2daededa8c842ae3446349c7bc16, type: 3}
   - {fileID: 8300000, guid: d27c5bf17ce5dcc4e89331384d72910b, type: 3}
   - {fileID: 8300000, guid: 749a944e0cb8c814f90e8ec8c1c202c6, type: 3}
+  - {fileID: 8300000, guid: 749a944e0cb8c814f90e8ec8c1c202c6, type: 3}
+  - {fileID: 8300000, guid: 384dd57e0098a5b4cae94d4da5ad01b0, type: 3}
   minTimeBetweenSounds: 3
   maxTimeBetweenSounds: 10
 --- !u!82 &7597151461726051121

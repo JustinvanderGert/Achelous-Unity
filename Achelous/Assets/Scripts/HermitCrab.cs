@@ -43,6 +43,7 @@ public class HermitCrab : MonoBehaviour
     public GameObject shootable;
     public GameObject projectile;
 
+    public float invincibility = 5;
     public float activationDistance = 100;
     public float idleTime = 3;
     public float armAttackDelay = 5;
@@ -89,8 +90,9 @@ public class HermitCrab : MonoBehaviour
 
 
     //Spawn the shootable areas depending on the current phase.
-    public void SpawnShootables()
+    public IEnumerator SpawnShootables()
     {
+        yield return new WaitForSeconds(invincibility);
         activeShootables.Clear();
         switch (attackPhase)
         {
@@ -264,19 +266,19 @@ public class HermitCrab : MonoBehaviour
                 //musicSource.Play();
                 attackPhase = AttackPhase.Phase1;
                 animator.SetTrigger("StartNewPhase");
-                SpawnShootables();
+                StartCoroutine(SpawnShootables());
                 break;
 
             case AttackPhase.Phase1:
                 attackPhase = AttackPhase.Phase2;
                 animator.SetTrigger("StartNewPhase");
-                SpawnShootables();
+                StartCoroutine(SpawnShootables());
                 break;
 
             case AttackPhase.Phase2:
                 attackPhase = AttackPhase.Phase3;
                 animator.SetTrigger("StartNewPhase");
-                SpawnShootables();
+                StartCoroutine(SpawnShootables());
                 break;
 
             case AttackPhase.Phase3:

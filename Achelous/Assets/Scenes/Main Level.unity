@@ -8996,6 +8996,18 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 271441780}
+    - target: {fileID: 6085756952241575495, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085756952241575495, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9baf5ad871f55fd43a2309ad1bc3537e, type: 3}
+    - target: {fileID: 6085756952241575495, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6085756952241596859, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
       propertyPath: target
       value: 
@@ -17746,6 +17758,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7597151461726051120, guid: a7464749607c72946813c2466b3e2a1d, type: 3}
+      propertyPath: clips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597151461726051120, guid: a7464749607c72946813c2466b3e2a1d, type: 3}
+      propertyPath: clips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 749a944e0cb8c814f90e8ec8c1c202c6, type: 3}
+    - target: {fileID: 7597151461726051120, guid: a7464749607c72946813c2466b3e2a1d, type: 3}
+      propertyPath: clips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 384dd57e0098a5b4cae94d4da5ad01b0, type: 3}
     - target: {fileID: 7597151461726051122, guid: a7464749607c72946813c2466b3e2a1d, type: 3}
       propertyPath: m_Name
       value: SoundManager
