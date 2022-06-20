@@ -8,6 +8,7 @@ public class FishSpawner : MonoBehaviour
 
     public float spawnAmount = 50;
     public Vector3 spawnSize = new Vector3(10, 10, 10);
+    int layerMask = 1 << 3;
 
     List<float> fishWeights = new List<float>();
     float totalWeight;
@@ -23,6 +24,7 @@ public class FishSpawner : MonoBehaviour
 
         for (int i = 0; i < fish.Count; i++)
         {
+            int retries = 0;
             float currentWeight = fish[i].GetComponent<FishSpawnSettings>().spawnWeight;
             float timesToSpawn = 100 / (100 / spawnAmount * totalWeight) * currentWeight;
 
@@ -30,10 +32,20 @@ public class FishSpawner : MonoBehaviour
             {
                 Vector3 spawnPosition = transform.position + new Vector3(Random.Range(0, spawnSize.x), Random.Range(0, spawnSize.y), Random.Range(0, spawnSize.z)) - spawnSize / 2;
                 GameObject fishObject = Instantiate(fish[i], spawnPosition, transform.rotation, gameObject.transform);
-                if(Physics.OverlapSphere(fishObject.transform.position, 1).Length >= 1)
+                if(Physics.Raycast(fishObject.transform.position, -Vector3.up, spawnSize.y, layerMask) && Physics.OverlapSphere(fishObject.transform.position, 0.1f).Length <= 1)
+                {
+                    retries = 0;
+                }
+                else
                 {
                     Destroy(fishObject);
                     b--;
+
+                    if (retries >= 10)
+                    {
+                        Debug.Log("Max attempts reached");
+                        b++;
+                    }
                 }
 
             }

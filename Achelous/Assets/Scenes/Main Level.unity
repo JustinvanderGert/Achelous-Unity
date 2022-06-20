@@ -744,6 +744,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &58338837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58338839}
+  - component: {fileID: 58338838}
+  m_Layer: 0
+  m_Name: FishSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &58338838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58338837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8131d483bcf27334ba34b5a2312503dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fish:
+  - {fileID: 3521049018868997401, guid: 4cc155d9eeb7d69438351e7ad52cce65, type: 3}
+  - {fileID: 6882028548781766432, guid: b9df14ec89e6c6c43bce379e90fae608, type: 3}
+  - {fileID: 9034525814399736600, guid: a0bd62bcc33485b439088f3219c90d18, type: 3}
+  - {fileID: 1509109712763594996, guid: 6bf7f6ab436651f4da55b981a7ef479d, type: 3}
+  - {fileID: 7798488920586198920, guid: eab8471a1a6983e48b1eb2500dc5791b, type: 3}
+  - {fileID: 7174519197725863312, guid: 1b4c9be780dba5448af432d3ebdd3245, type: 3}
+  - {fileID: 1339966551707160173, guid: 7ad1898504f6fae45a54d006ee4fba6f, type: 3}
+  - {fileID: 256151273835240987, guid: 12ee0892f977823429ec812a0c9aaaf9, type: 3}
+  - {fileID: 3647794717955615069, guid: e5e07402678f2aa4192d520f7c3403b5, type: 3}
+  spawnAmount: 200
+  spawnSize: {x: 500.77, y: 129.08, z: 677.79}
+--- !u!4 &58338839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58338837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 502, y: 143.5, z: 484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &66667166
 PrefabInstance:
   m_ObjectHideFlags: 0
