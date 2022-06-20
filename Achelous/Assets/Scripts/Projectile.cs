@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public Vector3 targetPos;
+    bool targetReached = false;
 
     void Start()
     {
@@ -15,6 +16,13 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+
+        float distance = Vector3.Distance(transform.position, targetPos);
+        if(distance == 0 && !targetReached)
+        {
+            targetReached = true;
+            StartCoroutine(TimeToDespawn());
+        }
     }
 
     public void SetTarget(GameObject newTarget)
@@ -29,5 +37,11 @@ public class Projectile : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(transform.parent.gameObject);
         }
+    }
+
+    IEnumerator TimeToDespawn()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Destroy(transform.parent.gameObject);
     }
 }

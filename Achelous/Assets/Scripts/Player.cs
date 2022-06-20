@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     GameObject currentTarget;
 
+    public AudioSource shootSource;
+
     
 
     private void Start()
@@ -84,6 +86,7 @@ public class Player : MonoBehaviour
 
     void Shoot()
     {
+        shootSource.Play();
         StartCoroutine(Cooldown());
         GameObject Shotprojectile = Instantiate(projectile, projectileSpawnpoint.position, projectileSpawnpoint.rotation);
         Shotprojectile.GetComponentInChildren<Projectile>().SetTarget(currentTarget);
