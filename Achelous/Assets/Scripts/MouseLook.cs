@@ -6,8 +6,8 @@ public class MouseLook : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
 
-    float xRotation = 0f;
-    float yRotation = 0f;
+    float xRotation;
+    float yRotation;
 
 
     void Start()
@@ -15,14 +15,16 @@ public class MouseLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        xRotation = transform.localRotation.x;
-        yRotation = transform.localRotation.y;
+        xRotation = transform.rotation.y;
+        yRotation = transform.rotation.x;
+        Debug.Log("Xrot: " + xRotation + " Yrot: " + yRotation);
     }
 
     void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = -Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        Debug.Log("Mx: " + mouseX + " My" + mouseY);
 
         xRotation += mouseY;
         xRotation = Mathf.Clamp(xRotation, -80f, 80f);
