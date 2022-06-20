@@ -8,6 +8,9 @@ public class Projectile : MonoBehaviour
     public Vector3 targetPos;
     bool targetReached = false;
 
+    [SerializeField]
+    float distance;
+
     void Start()
     {
 
@@ -17,7 +20,7 @@ public class Projectile : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
-        float distance = Vector3.Distance(transform.position, targetPos);
+        distance = Vector3.Distance(transform.position, targetPos);
         if(distance == 0 && !targetReached)
         {
             targetReached = true;
@@ -41,7 +44,7 @@ public class Projectile : MonoBehaviour
 
     IEnumerator TimeToDespawn()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Destroy(transform.parent.gameObject);
     }
 }
