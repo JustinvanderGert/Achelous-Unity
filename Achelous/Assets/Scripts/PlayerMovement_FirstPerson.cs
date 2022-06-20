@@ -59,12 +59,12 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
             velocity.y = -2f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = -Input.GetAxis("Vertical");
+        float z = Input.GetAxis("Horizontal");
 
         if (animator && audioSource)
         {
-            if (x > 0 || z > 0)
+            if (x > 0 || x < 0 || z < 0 || z > 0)
             {
                 audioSource.Play();
                 animator.SetBool("Walking", true);

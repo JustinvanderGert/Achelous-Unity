@@ -11,6 +11,7 @@ public class UI_Info : MonoBehaviour
     GameObject interactPrompt;
 
     bool scanning = false;
+    bool activatedPrompt = false;
 
 
     public float activeDistance = 10;
@@ -21,7 +22,7 @@ public class UI_Info : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        interactPrompt = GameObject.FindGameObjectWithTag("interactPrompt");
+        //interactPrompt = GameObject.FindGameObjectWithTag("interactPrompt");
         uiElement.SetActive(false);
     }
 
@@ -36,9 +37,16 @@ public class UI_Info : MonoBehaviour
             float distance = Vector3.Distance(uiElement.transform.position, player.transform.position);
 
             if (distance <= activeDistance)
+            {
+                Debug.Log("Activate!");
                 interactPrompt.SetActive(true);
-            else
+                activatedPrompt = true;
+            }
+            else if (distance > activeDistance + 5 && activatedPrompt)
+            {
                 interactPrompt.SetActive(false);
+                activatedPrompt = false;
+            }
         }
         else
         {
