@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
         distance = Vector3.Distance(transform.position, targetPos);
-        if(distance == 0 && !targetReached)
+        if(distance <= 1 && !targetReached)
         {
             targetReached = true;
             StartCoroutine(TimeToDespawn());
@@ -44,7 +44,7 @@ public class Projectile : MonoBehaviour
 
     IEnumerator TimeToDespawn()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(transform.parent.gameObject);
     }
 }
