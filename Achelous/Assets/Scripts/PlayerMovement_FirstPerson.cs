@@ -79,10 +79,14 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
                 playingWalkingSound = false;
             }
 
-            if (walking && !playingWalkingSound)
+            if (walking && !playingWalkingSound && isGrounded)
             {
                 audioSource.Play();
                 playingWalkingSound = true;
+            } else if(!isGrounded)
+            {
+                playingWalkingSound = false;
+                audioSource.Stop();
             }
         }
 
