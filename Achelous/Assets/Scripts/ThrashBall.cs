@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ThrashBall : MonoBehaviour
 {
+    [SerializeField]
+    PersonHealth playerHealth;
+    public int damage = 1;
+
     public GameObject player;
     public float speed = 10f;
     public Vector3 targetPosition;
@@ -14,6 +18,7 @@ public class ThrashBall : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerHealth = player.GetComponent<PersonHealth>();
     }
 
     void OnEnable()
@@ -47,6 +52,7 @@ public class ThrashBall : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit the Player");
+            playerHealth.TakeDamage(damage);
             Destroy(gameObject);
         }
     }
