@@ -288,6 +288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!1 &32851132
@@ -522,137 +526,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &36342896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 36342897}
-  - component: {fileID: 36342900}
-  - component: {fileID: 36342899}
-  - component: {fileID: 36342898}
-  m_Layer: 7
-  m_Name: AimCamera
-  m_TagString: AimCam
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &36342897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36342896}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 587116483}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &36342898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36342896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9f721deb47bf3d45bf876478884f590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player_speed: 0
-  last_speed: 0
-  currentFov: 0
-  desiredFov: 0
-  zoomStep: 20
-  zoomBoundOne: 50
-  zoomBoundTwo: 90
-  fovBoundOne: 40
-  fovBoundTwo: 60
-  fovBoundThree: 80
---- !u!114 &36342899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36342896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!20 &36342900
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36342896}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0.375
-    y: 0.25
-    width: 0.25
-    height: 0.5
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 32
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 64
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1001 &38359556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -719,6 +592,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
@@ -1028,6 +905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
 --- !u!1001 &80171532
@@ -1088,6 +969,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
       propertyPath: m_Name
       value: Buildings_First floor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
@@ -1230,6 +1115,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
@@ -1990,7 +1879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 225337303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Buildings (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2118,6 +2007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1 &236135197
@@ -2223,6 +2116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1001 &247445713
@@ -2234,7 +2131,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 653934450503037403, guid: b57872b947d9149bea39f90b207ad8fd, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 653934450503037403, guid: b57872b947d9149bea39f90b207ad8fd, type: 3}
       propertyPath: m_LocalScale.x
@@ -2299,15 +2196,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd149cdf6a4c0bf45a2bccf8b1b70ceb, type: 3}
   m_PrefabInstance: {fileID: 1350087601}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &264506539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 898756130421601655, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
-  m_PrefabInstance: {fileID: 1195005505}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &264506540 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 953032887952589836, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
   m_PrefabInstance: {fileID: 1195005505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &276379691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 898756130421601655, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
+  m_PrefabInstance: {fileID: 347810362}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &315368944
 GameObject:
@@ -2404,7 +2301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 898756130421601655, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 953032887952589836, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
       propertyPath: m_Pivot.x
@@ -2492,11 +2389,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5050404523699221734, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5050404523699221734, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2c8bff4c7731c640b51588a343eab75, type: 3}
@@ -2799,7 +2696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3534,6 +3431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Second floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
 --- !u!4 &461496254 stripped
@@ -3550,7 +3451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 462713618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: All Buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4073,6 +3974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
 --- !u!4 &567362826 stripped
@@ -4089,7 +3994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 572804784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Buildings (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4367,38 +4272,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &587116482
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 587116483}
-  m_Layer: 0
-  m_Name: Camera Focus
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &587116483
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587116482}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.189, y: -1.102, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1641069437}
-  - {fileID: 36342897}
-  m_Father: {fileID: 1851993308}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &595384530
 GameObject:
   m_ObjectHideFlags: 0
@@ -4544,6 +4417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
 --- !u!4 &622915972 stripped
@@ -4623,6 +4500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Second floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
 --- !u!1 &635702445
@@ -4677,7 +4558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d7288c8d4193640aaf120ce253f85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactPrompt: {fileID: 0}
+  interactPrompt: {fileID: 858255803}
   activeDistance: 10
   uiElement: {fileID: 1393278494}
 --- !u!114 &635702448
@@ -4813,6 +4694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
 --- !u!1001 &670541296
@@ -4873,6 +4758,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
       propertyPath: m_Name
       value: Buildings_Second floor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
@@ -5215,6 +5104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Second floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
 --- !u!1001 &739982768
@@ -5283,6 +5176,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
       propertyPath: m_Name
       value: Buildings_Second floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
@@ -5389,7 +5286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767963529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 423, y: 259.5, z: 566.7}
+  m_LocalPosition: {x: 423, y: 130, z: 566.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 96480645}
@@ -5407,9 +5304,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4343f36e21baf81498cd7697e2ef95f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noOfTrash: 20
-  spawnSize: {x: 190.33, y: 100, z: 200.4}
-  allPlastic:
+  noOfTrash: 45
+  spawnSize: {x: 150, y: 75, z: 175}
+  allPlastic: []
+  plastics:
   - {fileID: 115345017787031963, guid: 429509b77bfe2274c884c18026e44613, type: 3}
   - {fileID: 3270766191966620886, guid: 20b6fca883f8cc44ead7f5e4ddc3d9b1, type: 3}
   - {fileID: 8416818463325970240, guid: 3372a7e8e6b1ed74e8da409b443c32f7, type: 3}
@@ -5420,7 +5318,6 @@ MonoBehaviour:
   - {fileID: 6454297946526142344, guid: 7282195f525f59e41a83e40542bb9712, type: 3}
   - {fileID: 5634554030098607562, guid: 0c638e26553f98945ba62e113d453841, type: 3}
   - {fileID: 4557629910673275948, guid: 367ead99bc8770b418b44041b13ee6f2, type: 3}
-  plastics: []
 --- !u!1001 &791261671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6291,6 +6188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Second floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
 --- !u!1001 &870876402
@@ -6347,6 +6248,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
       propertyPath: m_Name
       value: Buildings_Second floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
@@ -6466,123 +6371,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &872081983
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 872081984}
-  - component: {fileID: 872081987}
-  - component: {fileID: 872081986}
-  - component: {fileID: 872081985}
-  m_Layer: 8
-  m_Name: No post
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &872081984
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872081983}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1641069437}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &872081985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872081983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 1
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!81 &872081986
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872081983}
-  m_Enabled: 1
---- !u!20 &872081987
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872081983}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 4
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 256
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1001 &881458134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6642,6 +6430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!1 &882075012
@@ -6679,7 +6471,7 @@ Transform:
   - {fileID: 226086481}
   - {fileID: 1782404886}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &884388106 stripped
 Transform:
@@ -6748,6 +6540,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
@@ -6885,6 +6681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Second floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
 --- !u!4 &911875734 stripped
@@ -6954,6 +6754,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
@@ -7297,36 +7101,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
   m_PrefabInstance: {fileID: 1928662787}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &977093603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 977093604}
-  m_Layer: 0
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &977093604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977093603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1851993308}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &990875054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,6 +7351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!1001 &1005494994
@@ -7770,6 +7548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1001 &1011637305
@@ -7835,6 +7617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1001 &1013102525
@@ -7895,6 +7681,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
       propertyPath: m_Name
       value: Buildings_First floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
@@ -8009,6 +7799,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
@@ -8324,6 +8118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
 --- !u!1 &1128856783
@@ -8335,7 +8133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128856784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8978,6 +8776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!4 &1210554367 stripped
@@ -9048,6 +8850,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
       propertyPath: m_Name
       value: Buildings_Second floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
@@ -9368,7 +9174,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6196292947638361824, guid: 0c75120dca29a43fb8a7e7461310db0c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6196292947638361824, guid: 0c75120dca29a43fb8a7e7461310db0c, type: 3}
       propertyPath: m_LocalScale.x
@@ -9722,6 +9528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
 --- !u!4 &1332921951 stripped
@@ -9913,6 +9723,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
       propertyPath: m_Name
       value: Buildings_Second floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
@@ -10323,6 +10137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Second floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
 --- !u!1001 &1417642385
@@ -10379,6 +10197,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
@@ -10573,101 +10395,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1444280100
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1444280101}
-  - component: {fileID: 1444280104}
-  - component: {fileID: 1444280103}
-  - component: {fileID: 1444280102}
-  m_Layer: 0
-  m_Name: Eyes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1444280101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444280100}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_Children: []
-  m_Father: {fileID: 1851993308}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1444280102
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444280100}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1444280103
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444280100}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1444280104
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444280100}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1450563222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10788,6 +10515,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
       propertyPath: m_Name
       value: Buildings_Second floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03872f3ffdba41440852c55cb3e787bc, type: 3}
@@ -10948,8 +10679,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+--- !u!1001 &1529357824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6085756952241596859, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 276379691}
+    - target: {fileID: 6085756952241596862, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_Name
+      value: robo idle and walking
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 510.40155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 130.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 823.7431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863242946696262404, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
 --- !u!4 &1533259551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ff553b3052f6f1438c983034f3e4627, type: 3}
@@ -11013,6 +10809,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
@@ -11174,6 +10974,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
@@ -11401,125 +11205,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640423083}
   m_CullTransparentMesh: 1
---- !u!1 &1641069436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1641069437}
-  - component: {fileID: 1641069440}
-  - component: {fileID: 1641069439}
-  - component: {fileID: 1641069438}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1641069437
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641069436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 872081984}
-  m_Father: {fileID: 587116483}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1641069438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641069436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras:
-  - {fileID: 872081987}
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 1
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 1
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!81 &1641069439
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641069436}
-  m_Enabled: 1
---- !u!20 &1641069440
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641069436}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 255
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!4 &1641953931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8549aa193f720344bff948df94a0184, type: 3}
@@ -12177,6 +11862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1 &1781450345
@@ -12389,182 +12078,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
   m_PrefabInstance: {fileID: 2091836575}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1851993300
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1851993308}
-  - component: {fileID: 1851993307}
-  - component: {fileID: 1851993306}
-  - component: {fileID: 1851993305}
-  - component: {fileID: 1851993304}
-  - component: {fileID: 1851993303}
-  - component: {fileID: 1851993302}
-  - component: {fileID: 1851993301}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1851993301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a4079322e8f46446a0bbc4d8634d511, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 100
---- !u!114 &1851993302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a5a4e290e5a67f43878e3cecbd753cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 264506539}
-  moveScript: {fileID: 1851993303}
-  visibleTargets: []
-  projectileSpawnpoint: {fileID: 1851993308}
-  projectile: {fileID: 8931939397258461477, guid: 32fb5eba5cd553e4da904594e78087d0, type: 3}
-  minTargetingRange: 100
-  shootingCooldown: 0.5
---- !u!114 &1851993303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10f6681cf485d47488e181b730a07bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScore: 0
-  baseSpeed: 12
-  gravity: -9.81
-  jumpHeight: 3
-  doubleJump: 0
-  groundCheck: {fileID: 977093604}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  speed: 12
---- !u!143 &1851993304
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &1851993305
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1851993306
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1851993307
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1851993308
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851993300}
-  m_LocalRotation: {x: 0, y: 0.64356273, z: 0, w: 0.7653934}
-  m_LocalPosition: {x: 510.74643, y: 133.50414, z: 827.1415}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 587116483}
-  - {fileID: 1444280101}
-  - {fileID: 977093604}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 80.116, z: 0}
 --- !u!1 &1854162491
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,6 +12281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!4 &1906340038 stripped
@@ -12839,6 +12356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1001 &1928662787
@@ -12900,6 +12421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!1001 &1930734524
@@ -12960,6 +12485,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
       propertyPath: m_Name
       value: Buildings_First floor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
@@ -13204,6 +12733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!1001 &1966523416
@@ -13272,6 +12805,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a90bdf97c876534f9ac7a35cf4d5e8b, type: 3}
@@ -13371,6 +12908,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
       propertyPath: m_Name
       value: Buildings_First floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
@@ -13496,6 +13037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
 --- !u!1 &2030143374
@@ -13530,7 +13075,7 @@ Transform:
   - {fileID: 844977525}
   - {fileID: 1106666554}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2034371632 stripped
 Transform:
@@ -13691,7 +13236,7 @@ Transform:
   - {fileID: 543450652560267666}
   - {fileID: 543450652787769948}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2056831728
 PrefabInstance:
@@ -13819,6 +13364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_First floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9b514ec00d6964e9f2c3215e739ab6, type: 3}
 --- !u!1001 &2091836575
@@ -13875,6 +13424,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
       propertyPath: m_Name
       value: Buildings_Destroyed_Second floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbb153ef0e24af4f928d7f0d094acf8, type: 3}
