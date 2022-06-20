@@ -39,6 +39,8 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
     Vector3 velocity;
 
     bool isGrounded;
+    bool walking = false;
+    bool playingWalkingSound;
 
     public float speed = 12f;
     
@@ -66,13 +68,21 @@ public class PlayerMovement_FirstPerson : MonoBehaviour
         {
             if (x > 0 || x < 0 || z < 0 || z > 0)
             {
-                audioSource.Play();
+                walking = true;
                 animator.SetBool("Walking", true);
             }
             else
             {
                 audioSource.Stop();
                 animator.SetBool("Walking", false);
+                walking = false;
+                playingWalkingSound = false;
+            }
+
+            if (walking && !playingWalkingSound)
+            {
+                audioSource.Play();
+                playingWalkingSound = true;
             }
         }
 
