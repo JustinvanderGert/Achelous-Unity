@@ -2,20 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class Shrine : MonoBehaviour
 {
+    SoundManager soundManager;
+
     public float activationRange = 5f;
-    public Text activationText;
+    public TMP_Text activationText;
 
     bool activated = false;
     GameObject player;
+    public AudioClip ShrineMusic;
     AudioSource audioSource;
 
 
     private void Start()
     {
+        soundManager = GameObject.FindObjectOfType<SoundManager>();
         audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -40,7 +45,8 @@ public class Shrine : MonoBehaviour
     void ActivateShrine()
     {
         Debug.Log("Activated shrine");
-        audioSource.Play();
+        soundManager.PlayShrine(ShrineMusic);
+        //audioSource.Play();
         activationText.gameObject.SetActive(false);
         activated = true;
     }

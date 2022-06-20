@@ -14,6 +14,9 @@ public class MouseLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        xRotation = transform.localRotation.x;
+        yRotation = transform.localRotation.y;
     }
 
     void Update()

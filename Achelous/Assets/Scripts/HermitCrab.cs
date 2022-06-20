@@ -11,6 +11,7 @@ public class HermitCrab : MonoBehaviour
     GameObject player;
     AudioSource audioSource;
     public AudioSource musicSource;
+    public SoundManager soundManager;
 
 
     enum AttackPhase { Idle, Phase1, Phase2, Phase3, Defeated }
@@ -55,6 +56,8 @@ public class HermitCrab : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         waveParticles = gameObject.GetComponentInChildren<ParticleSystem>();
         audioSource = GetComponent<AudioSource>();
+
+        soundManager = GameObject.FindObjectOfType<SoundManager>();
 
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -257,7 +260,8 @@ public class HermitCrab : MonoBehaviour
         switch (attackPhase)
         {
             case AttackPhase.Idle:
-                musicSource.Play();
+                soundManager.ChangeMusic(bossMusic);
+                //musicSource.Play();
                 attackPhase = AttackPhase.Phase1;
                 animator.SetTrigger("StartNewPhase");
                 SpawnShootables();
@@ -277,13 +281,14 @@ public class HermitCrab : MonoBehaviour
 
             case AttackPhase.Phase3:
                 PlaySound(bossDeath);
+                soundManager.ResetMusic();
                 attackPhase = AttackPhase.Defeated;
                 animator.SetTrigger("Death");
                 break;
 
             //This one is for testing (Delete before publish)
             case AttackPhase.Defeated:
-                musicSource.Stop();
+                //musicSource.Stop();
                 attackPhase = AttackPhase.Idle;
                 break;
         }
