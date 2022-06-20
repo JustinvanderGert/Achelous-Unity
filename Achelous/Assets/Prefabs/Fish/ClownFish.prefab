@@ -286,7 +286,6 @@ GameObject:
   - component: {fileID: 8187681071137602233}
   - component: {fileID: 8885218635640342276}
   - component: {fileID: 4724448628001087635}
-  - component: {fileID: 6197250769991204680}
   - component: {fileID: -5124099242948354997}
   m_Layer: 0
   m_Name: ClownFish
@@ -359,20 +358,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!64 &6197250769991204680
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9034525814399736600}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &-5124099242948354997
 MonoBehaviour:
   m_ObjectHideFlags: 0

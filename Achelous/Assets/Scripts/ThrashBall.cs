@@ -13,6 +13,7 @@ public class ThrashBall : MonoBehaviour
     public Vector3 targetPosition;
 
     bool targetReached = false;
+    public float destroyTime = 5;
 
 
     private void Start()
@@ -43,7 +44,7 @@ public class ThrashBall : MonoBehaviour
 
     IEnumerator TimedDestroy()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(destroyTime);
         Destroy(gameObject);
     }
 
@@ -51,7 +52,7 @@ public class ThrashBall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Hit the Player");
+            //Debug.Log("Hit the Player");
             playerHealth.TakeDamage(damage);
             Destroy(gameObject);
         }

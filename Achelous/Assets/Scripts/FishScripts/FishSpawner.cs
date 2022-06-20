@@ -32,7 +32,7 @@ public class FishSpawner : MonoBehaviour
             {
                 Vector3 spawnPosition = transform.position + new Vector3(Random.Range(0, spawnSize.x), Random.Range(0, spawnSize.y), Random.Range(0, spawnSize.z)) - spawnSize / 2;
                 GameObject fishObject = Instantiate(fish[i], spawnPosition, transform.rotation, gameObject.transform);
-                if(Physics.Raycast(fishObject.transform.position, -Vector3.up, spawnSize.y, layerMask) && Physics.OverlapSphere(fishObject.transform.position, 0.1f).Length <= 1)
+                if (Physics.Raycast(fishObject.transform.position, -Vector3.up, spawnSize.y, layerMask) && Physics.OverlapSphere(fishObject.transform.position, 0.1f).Length <= 2)
                 {
                     retries = 0;
                 }
@@ -47,7 +47,6 @@ public class FishSpawner : MonoBehaviour
                         b++;
                     }
                 }
-
             }
         }
     }

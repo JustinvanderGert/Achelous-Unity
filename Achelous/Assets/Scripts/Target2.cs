@@ -80,7 +80,7 @@ public class Target2 : MonoBehaviour
         //Got shot when charge is at midpoint
         if (chargeState == ChargeStates.Half)
         {
-            Debug.Log("Crit");
+            //Debug.Log("Crit");
             playerScript.moveScript.SpeedBoost(true);
             playerScript.moveScript.StartDoubleJump(true);
         }
@@ -88,7 +88,7 @@ public class Target2 : MonoBehaviour
         //Got shot when charge is full
         if (chargeState == ChargeStates.Full)
         {
-            Debug.Log("Hit");
+            //Debug.Log("Hit");
             playerScript.moveScript.SpeedBoost(false);
             playerScript.moveScript.StartDoubleJump(false);
         }

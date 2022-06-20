@@ -289,7 +289,6 @@ GameObject:
   - component: {fileID: 4494302336144599648}
   - component: {fileID: -3785788850014177111}
   - component: {fileID: 1027379458734285301}
-  - component: {fileID: -1519333063710420678}
   - component: {fileID: -4563375330272338896}
   m_Layer: 0
   m_Name: Whale
@@ -362,20 +361,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!64 &-1519333063710420678
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3647794717955615069}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &-4563375330272338896
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -49,7 +49,7 @@ public class RandomSpawner : MonoBehaviour
 
                 if (retries >= 10)
                 {
-                    Debug.Log("Max attempts reached");
+                    //Debug.Log("Max attempts reached");
                     i++;
                 }
             }

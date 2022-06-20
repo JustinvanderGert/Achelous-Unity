@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1103208083523796232}
   - component: {fileID: -201352203557215616}
   - component: {fileID: 5444644553338297139}
-  - component: {fileID: 2684819018341594783}
   - component: {fileID: -7635295384647228043}
   m_Layer: 0
   m_Name: Tuna
@@ -68,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0264dafd353d0ed449a674a32b76aeda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnWeight: 10
+  spawnWeight: 30
 --- !u!54 &5444644553338297139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -85,20 +84,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!64 &2684819018341594783
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256151273835240987}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &-7635295384647228043
 MonoBehaviour:
   m_ObjectHideFlags: 0

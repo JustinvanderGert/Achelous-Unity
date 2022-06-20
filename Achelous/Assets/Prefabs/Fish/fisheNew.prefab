@@ -321,7 +321,6 @@ GameObject:
   - component: {fileID: 7555584001165752106}
   - component: {fileID: 6164740280975698213}
   - component: {fileID: -9211846131413616560}
-  - component: {fileID: -7608633604987844349}
   - component: {fileID: -353343351742561718}
   m_Layer: 0
   m_Name: fisheNew
@@ -375,20 +374,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!64 &-7608633604987844349
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7174519197725863312}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &-353343351742561718
 MonoBehaviour:
   m_ObjectHideFlags: 0

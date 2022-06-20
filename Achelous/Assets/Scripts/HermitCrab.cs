@@ -41,6 +41,7 @@ public class HermitCrab : MonoBehaviour
 
     public List<GameObject> activeShootables = new List<GameObject>();
     public GameObject shootable;
+    public GameObject fling;
     public GameObject projectile;
 
     public float invincibility = 5;
@@ -67,7 +68,7 @@ public class HermitCrab : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            SetPhase();
+            //SetPhase();
         }
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
@@ -97,16 +98,16 @@ public class HermitCrab : MonoBehaviour
         switch (attackPhase)
         {
             case AttackPhase.Phase1:
-                Debug.Log("Phase 1");
+                //Debug.Log("Phase 1");
                 GameObject newShootable0 = Instantiate(shootable, weakSpots[0].position, weakSpots[0].rotation, weakSpots[0]);
                 newShootable0.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 activeShootables.Add(newShootable0);
 
-                idleRoutine = StartCoroutine(IdleTime());
+                //idleRoutine = StartCoroutine(IdleTime());
                 break;
 
             case AttackPhase.Phase2:
-                Debug.Log("Phase 2");
+                //Debug.Log("Phase 2");
                 GameObject newShootable1 = Instantiate(shootable, weakSpots[1].position, weakSpots[1].rotation, weakSpots[1]);
                 newShootable1.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 activeShootables.Add(newShootable1);
@@ -115,17 +116,17 @@ public class HermitCrab : MonoBehaviour
                 newShootable2.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 activeShootables.Add(newShootable2);
 
-                idleRoutine = StartCoroutine(IdleTime());
+                //idleRoutine = StartCoroutine(IdleTime());
                 break;
 
             case AttackPhase.Phase3:
-                Debug.Log("Phase 3");
+                //Debug.Log("Phase 3");
 
                 GameObject newShootable3 = Instantiate(shootable, weakSpots[3].position, weakSpots[3].rotation, weakSpots[3]);
                 newShootable3.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 activeShootables.Add(newShootable3);
 
-                idleRoutine = StartCoroutine(IdleTime());
+                //idleRoutine = StartCoroutine(IdleTime());
                 break;
         }
     }
@@ -165,7 +166,7 @@ public class HermitCrab : MonoBehaviour
                 animator.SetTrigger("ArmAttack");
             }
 
-            StartCoroutine(ArmAttack());
+            StartCoroutine(ThrowAttack());
         }
 
         //Slam Attack (Wave of trash)
@@ -179,7 +180,20 @@ public class HermitCrab : MonoBehaviour
     IEnumerator ThrowAttack()
     {
         yield return new WaitForSeconds(2);
-        GameObject thrownObject = Instantiate(projectile, transform);
+        
+        GameObject thrownObject;
+        if (attackPhase == AttackPhase.Phase2)
+        {
+            thrownObject = Instantiate(fling, transform);
+
+            ThrashBall trashBall = thrownObject.GetComponent<ThrashBall>();
+            trashBall.speed = 1;
+            trashBall.damage = 1;
+            trashBall.destroyTime = 2;
+        }
+        else
+            thrownObject = Instantiate(projectile, transform);
+
         thrownObject.GetComponent<ThrashBall>().targetPosition = player.transform.position;
         thrownObject.GetComponent<ThrashBall>().player = player;
 
@@ -267,18 +281,21 @@ public class HermitCrab : MonoBehaviour
                 attackPhase = AttackPhase.Phase1;
                 animator.SetTrigger("StartNewPhase");
                 StartCoroutine(SpawnShootables());
+                idleRoutine = StartCoroutine(IdleTime());
                 break;
 
             case AttackPhase.Phase1:
                 attackPhase = AttackPhase.Phase2;
                 animator.SetTrigger("StartNewPhase");
                 StartCoroutine(SpawnShootables());
+                idleRoutine = StartCoroutine(IdleTime());
                 break;
 
             case AttackPhase.Phase2:
                 attackPhase = AttackPhase.Phase3;
                 animator.SetTrigger("StartNewPhase");
                 StartCoroutine(SpawnShootables());
+                idleRoutine = StartCoroutine(IdleTime());
                 break;
 
             case AttackPhase.Phase3:
@@ -286,12 +303,14 @@ public class HermitCrab : MonoBehaviour
                 soundManager.ResetMusic();
                 attackPhase = AttackPhase.Defeated;
                 animator.SetTrigger("Death");
+                idleRoutine = StartCoroutine(IdleTime());
                 break;
 
             //This one is for testing (Delete before publish)
             case AttackPhase.Defeated:
                 //musicSource.Stop();
                 attackPhase = AttackPhase.Idle;
+                idleRoutine = StartCoroutine(IdleTime());
                 break;
         }
     }

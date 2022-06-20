@@ -38,7 +38,7 @@ public class UI_Info : MonoBehaviour
 
             if (distance <= activeDistance)
             {
-                Debug.Log("Activate!");
+                //Debug.Log("Activate!");
                 interactPrompt.SetActive(true);
                 activatedPrompt = true;
             }

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1742900307295806817}
   - component: {fileID: 3043308036515724382}
   - component: {fileID: 2869866305950797283}
-  - component: {fileID: 2690060629076551762}
   - component: {fileID: 1788384088167017526}
   m_Layer: 0
   m_Name: DoriFish
@@ -85,20 +84,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!64 &2690060629076551762
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509109712763594996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &1788384088167017526
 MonoBehaviour:
   m_ObjectHideFlags: 0

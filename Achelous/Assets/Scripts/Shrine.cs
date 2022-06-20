@@ -46,7 +46,7 @@ public class Shrine : MonoBehaviour
 
     void ActivateShrine()
     {
-        Debug.Log("Activated shrine");
+        //Debug.Log("Activated shrine");
         soundManager.PlayShrine(ShrineMusic);
         //audioSource.Play();
         activationText.gameObject.SetActive(false);

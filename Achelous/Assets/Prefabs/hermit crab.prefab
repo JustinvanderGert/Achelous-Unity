@@ -375,6 +375,36 @@ Transform:
   m_Father: {fileID: 8860393881564383552}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -43.743275, y: 15.87715, z: -16.340952}
+--- !u!1 &3733624883068160056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5299876467039007821}
+  m_Layer: 0
+  m_Name: Plane Transform 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5299876467039007821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3733624883068160056}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 0.38547844, y: 0.38547847, z: 0.38547838}
+  m_Children: []
+  m_Father: {fileID: 8688451921843779785}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3755723360261886524
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +999,7 @@ Transform:
   m_GameObject: {fileID: 8382040225905293287}
   m_LocalRotation: {x: 0, y: -0.6840253, z: 0, w: 0.72945833}
   m_LocalPosition: {x: 29.898678, y: 0.25, z: -24.138058}
-  m_LocalScale: {x: 2.5941784, y: 2.5941784, z: 2.5941784}
+  m_LocalScale: {x: 2.594179, y: 2.5941784, z: 2.5941792}
   m_Children:
   - {fileID: 8688451921843779785}
   - {fileID: 264015636186086851}
@@ -1042,11 +1072,13 @@ MonoBehaviour:
   bossDeath: {fileID: 8300000, guid: 036858ee78d80b047a1870f404f28a02, type: 3}
   bossMusic: {fileID: 8300000, guid: 695b7833da6cae5479bfeb9e2b5131e2, type: 3}
   activeShootables: []
-  shootable: {fileID: 6122355611262371972, guid: 184b1715158a7364582b4236dfee79c3, type: 3}
+  shootable: {fileID: 7150307723960478353, guid: 32ecbf9a3b193e842bc9e3f8ccef8cdf, type: 3}
+  fling: {fileID: 3028038404674427030, guid: 9ac77c81c4f305f468684ce69b43c57e, type: 3}
   projectile: {fileID: 6059981871995651575, guid: 725deb8ea3f1e304eb2b825311708a7e, type: 3}
+  invincibility: 10
   activationDistance: 100
-  idleTime: 7.5
-  armAttackDelay: 5
+  idleTime: 0
+  armAttackDelay: 1
   slamAttackDelay: 5
   slamParticleDelay: 2.65
 --- !u!82 &1045487864
@@ -1186,6 +1218,7 @@ GameObject:
   - component: {fileID: 8688451921843779785}
   - component: {fileID: 8688451921843779787}
   - component: {fileID: 8688451921843779784}
+  - component: {fileID: 1455712479}
   m_Layer: 0
   m_Name: Slam wave particles
   m_TagString: Untagged
@@ -1203,7 +1236,8 @@ Transform:
   m_LocalRotation: {x: -0.5158048, y: 0.48367897, z: 0.48367897, w: 0.5158048}
   m_LocalPosition: {x: 0, y: -2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5299876467039007821}
   m_Father: {fileID: 9158401346971299165}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -4785,7 +4819,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
     type: 0
     collisionMode: 0
@@ -4962,11 +4996,11 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 2
     inside: 0
     outside: 0
@@ -5980,6 +6014,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1455712479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688451921843779782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22a29a7306257b4a89ed7cb123dd5f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  damage: 2
 --- !u!1 &8776226922876813690
 GameObject:
   m_ObjectHideFlags: 0
