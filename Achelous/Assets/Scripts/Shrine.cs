@@ -7,6 +7,7 @@ using TMPro;
 
 public class Shrine : MonoBehaviour
 {
+    public GameObject LevelChanger;
     SoundManager soundManager;
 
     public float activationRange = 5f;
@@ -23,6 +24,7 @@ public class Shrine : MonoBehaviour
         soundManager = GameObject.FindObjectOfType<SoundManager>();
         audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
+        LevelChanger.SetActive(false);
     }
 
     void Update()
@@ -49,6 +51,14 @@ public class Shrine : MonoBehaviour
         //audioSource.Play();
         activationText.gameObject.SetActive(false);
         activated = true;
+
+        StartCoroutine(TimeTillActivation());
+    }
+
+    IEnumerator TimeTillActivation()
+    {
+        yield return new WaitForSeconds(6);
+        LevelChanger.SetActive(true);
     }
 
     private void OnDrawGizmosSelected()
