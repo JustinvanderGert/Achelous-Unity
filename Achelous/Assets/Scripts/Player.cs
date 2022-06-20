@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     private void Start()
     {
         moveScript = gameObject.GetComponent<PlayerMovement_FirstPerson>();
+        target = GameObject.FindGameObjectWithTag("Slider");
+        target.SetActive(false);
     }
 
     void Update()
