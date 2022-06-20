@@ -783,7 +783,7 @@ MonoBehaviour:
   - {fileID: 1339966551707160173, guid: 7ad1898504f6fae45a54d006ee4fba6f, type: 3}
   - {fileID: 256151273835240987, guid: 12ee0892f977823429ec812a0c9aaaf9, type: 3}
   - {fileID: 3647794717955615069, guid: e5e07402678f2aa4192d520f7c3403b5, type: 3}
-  spawnAmount: 200
+  spawnAmount: 1000
   spawnSize: {x: 500.77, y: 129.08, z: 677.79}
 --- !u!4 &58338839
 Transform:
@@ -2834,18 +2834,6 @@ PrefabInstance:
     - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.5941784
-      objectReference: {fileID: 0}
-    - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.5941784
-      objectReference: {fileID: 0}
-    - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.5941784
       objectReference: {fileID: 0}
     - target: {fileID: 9158401346971299165, guid: d1f685d47d557f447afb2f33ebefdc98, type: 3}
       propertyPath: m_LocalPosition.x

@@ -11,6 +11,11 @@ public class ThrashBall : MonoBehaviour
     bool targetReached = false;
 
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void OnEnable()
     {
         StartCoroutine(TimedDestroy());

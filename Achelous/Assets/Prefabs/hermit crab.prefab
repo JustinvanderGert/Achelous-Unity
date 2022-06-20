@@ -969,7 +969,7 @@ Transform:
   m_GameObject: {fileID: 8382040225905293287}
   m_LocalRotation: {x: 0, y: -0.6840253, z: 0, w: 0.72945833}
   m_LocalPosition: {x: 29.898678, y: 0.25, z: -24.138058}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5941784, y: 2.5941784, z: 2.5941784}
   m_Children:
   - {fileID: 8688451921843779785}
   - {fileID: 264015636186086851}
@@ -1027,6 +1027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8688451922119196360}
   musicSource: {fileID: 2013853253}
+  soundManager: {fileID: 0}
   attackPhase: 0
   weakSpots:
   - {fileID: 780567969518346605}
@@ -1042,7 +1043,7 @@ MonoBehaviour:
   bossMusic: {fileID: 8300000, guid: 695b7833da6cae5479bfeb9e2b5131e2, type: 3}
   activeShootables: []
   shootable: {fileID: 6122355611262371972, guid: 184b1715158a7364582b4236dfee79c3, type: 3}
-  projectile: {fileID: 8412644024158949413, guid: b7df33f494aaeae4d8a66ebd35f0717f, type: 3}
+  projectile: {fileID: 6059981871995651575, guid: 725deb8ea3f1e304eb2b825311708a7e, type: 3}
   activationDistance: 100
   idleTime: 7.5
   armAttackDelay: 5
