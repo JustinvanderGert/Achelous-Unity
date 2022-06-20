@@ -15,8 +15,8 @@ public class MouseLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        xRotation = transform.rotation.y;
-        yRotation = transform.rotation.x;
+        xRotation = transform.rotation.eulerAngles.x;
+        yRotation = transform.rotation.eulerAngles.y;
         Debug.Log("Xrot: " + xRotation + " Yrot: " + yRotation);
     }
 

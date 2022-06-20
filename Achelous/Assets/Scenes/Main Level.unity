@@ -8997,17 +8997,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 271441780}
     - target: {fileID: 6085756952241575495, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6085756952241575495, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 4eca8a20b953a7c4e8eb3d0f212a730e, type: 3}
-    - target: {fileID: 6085756952241575495, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 00938dc48339841498187603d7840a7c, type: 3}
     - target: {fileID: 6085756952241596859, guid: 415fbf0bd88e9564282bc05ecfe6af84, type: 3}
       propertyPath: target
       value: 
